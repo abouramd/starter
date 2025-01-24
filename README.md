@@ -12,7 +12,7 @@ docker run -w /dir  -it -v $PWD:/dir -p 3000:3000 --rm alpine:edge sh -uelic '
 
   mkdir -p ~/.local/share/nvim/mason/bin/
   ln -s /usr/bin/clangd ~/.local/share/nvim/mason/bin/clangd
-  mkdir ~/.local/share/nvim/mason/packages/clangd
+  mkdir -p ~/.local/share/nvim/mason/packages/clangd
   
   git clone https://github.com/abouramd/starter ~/.config/nvim
   zsh
