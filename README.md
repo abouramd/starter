@@ -6,8 +6,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # Run in Docker
 
 ```bash
-
-docker run -w /dir  -it -v $PWD:/dir -p 3000:3000 --rm alpine:edge sh -uelic '
+docker run -w /dir  -it -v $PWD:/dir --net=host --rm alpine:edge sh -uelic '
   apk add zsh zsh-autosuggestions zsh-syntax-highlighting git lazygit fzf curl neovim ripgrep alpine-sdk npm nodejs clang clang-dev fd luarocks unzip wget gzip bash tree-sitter --update
 
   echo exit | sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -21,8 +20,4 @@ docker run -w /dir  -it -v $PWD:/dir -p 3000:3000 --rm alpine:edge sh -uelic '
   git clone https://github.com/abouramd/starter ~/.config/nvim
   zsh
 '
-
-
-
-
 ```
