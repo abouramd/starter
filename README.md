@@ -21,6 +21,7 @@ docker run -w /dir  -it -v $PWD:/dir --net=host --rm alpine:edge sh -uelic '
   mkdir -p ~/.local/share/nvim/mason/packages/clangd
   
   git clone https://github.com/abouramd/starter ~/.config/nvim
+  nvim --headless +q 
   zsh
 '
 ```
