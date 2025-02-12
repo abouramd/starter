@@ -6,5 +6,5 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # Run in Docker
 
 ```
-docker run -it -v $PWD:/workdir abouramd42/lazyvim-setup:latest
+docker run -it -v $PWD:/workdir --rm abouramd42/lazyvim-setup:latest
 ```
